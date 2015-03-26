@@ -1,1 +1,60 @@
 # Hangman
+This is initial version of pseudocode and may have so many errors, you are requested to edit this and make next version of the file
+pseudocode version 1
+
+//first initialize the current string with a correct value that is user going to guess
+char[] = "Apple"
+user_guess[] = "     "
+//calculate string length and display same # of spaces to the user screen
+print spaces[]
+
+//ask user to start guessing the string
+print "start guessing the correct string" 
+
+//initialize a variable to count the number of mispredictions
+i = 0;
+A loop that recursively accepts chars entered by user...
+{
+	cin>>ch
+	
+	//check if this char is part of string
+	bool b = does_include(ch)
+
+	if (bool == false)
+		i++;
+		print_hangman(i);
+	else
+		//print user_guess[] 
+
+}
+
+//returns true/false based on whether the passed char is a part of correct answer string
+boolean does_include(int ch)
+{
+	flag = false;
+	i = strlen(string)
+	while(i<strlen){
+		if(strlen[i] != ch){
+			i++;
+		}else{
+			flag = true;
+			space[i] = c;
+		}
+	}
+	return flag;
+}
+
+//function to print hangman
+print_hangman(int i)
+{
+	switch (i){
+		case 1: //draw hanging rope
+		case 2: //draw face
+		case 3:	//draw tie
+		case 4:	//draw left hand
+		case 5: //draw right hand
+		case 6:	//draw left leg
+		case 7:	//draw right leg
+		case 8:	//hang the man, terminate the program (or prompt for next word)
+	}
+}
