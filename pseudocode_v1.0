@@ -43,6 +43,7 @@ boolean does_include(int ch)
 //function to print hangman
 print_hangman(int i)
 {
+	//call function to make sound
 	switch (i){
 		case 1: //draw hanging rope
 		case 2: //draw face
@@ -54,3 +55,7 @@ print_hangman(int i)
 		case 8:	//hang the man, terminate the program (or prompt for next word)
 	}
 }
+
+//function to play sound while drawing the hangman
+void sound()
+{}
